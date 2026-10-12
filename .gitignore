@@ -1,0 +1,31 @@
+# Dependencies and generated application output
+/node_modules/
+/.next/
+/out/
+/build/
+/coverage/
+/.vercel/
+*.tsbuildinfo
+next-env.d.ts
+
+# Local-only development and release material
+/.local/
+/references/
+/docs/phase-*.md
+/docs/fix-*.md
+/AGENTS.md
+/backup/
+/backups/
+/*-backup*/
+/*-release-qa*/
+*.zip
+*.log
+
+# Local credentials and environment files
+.env*
+*.pem
+*.key
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db

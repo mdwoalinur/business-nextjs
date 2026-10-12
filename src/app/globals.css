@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  /* Flat raster samples confirmed in Phase 3; font/source CSS remains unverified. */
+  --reference-navy: #0d0b56;
+  --reference-background: #f5f4f4;
+  --reference-text: #514b4b;
+  --reference-body: #898989;
+  --reference-blue: #1b367c;
+  --reference-secondary-navy: #050829;
+  --reference-copyright: #645757;
+  --reference-circle: #dedde5;
+  --reference-border: #b7b6b6;
+  --reference-rule: #52669a;
+  --reference-cta-start: #1b367c;
+  --reference-cta-end: #3163e2;
+  --reference-cta-about-start: #20397d;
+  --reference-cta-about-end: #355fd6;
+  --reference-square-fill: #1a1977;
+  --reference-square-opacity: 0.096;
+  --reference-cta-gradient: linear-gradient(90deg, var(--reference-cta-start), var(--reference-cta-end));
+  --reference-cta-about-gradient: linear-gradient(90deg, var(--reference-cta-about-start), var(--reference-cta-about-end));
+  --reference-cta-shadow: 0 4px 4px rgb(0 0 0 / 0.28);
+  --reference-hero-shadow: 0 4px 4px rgb(0 0 0 / 0.25);
+  --reference-content-width: 1370px;
+  --reference-navbar-width: 1140px;
+  --reference-footer-width: 1190px;
+  --reference-inner-hero-height: 427px;
+  --reference-home-hero-height: 664px;
+  --reference-cta-width: 576px;
+  --reference-cta-height: 78px;
+  --reference-pill-radius: 39px;
+  --reference-footer-height: 406px;
+  --home-light-ink: #fffbfb;
+  --home-muted-type: #f0efef;
+  --home-quote-surface: #fcfbfb;
+  --home-plan-badge: #959fbf;
+  --home-featured-caption: #d9d9d9;
+  --home-popular-gradient: linear-gradient(90deg, #264287, #ca1e90);
+  --home-featured-gradient: linear-gradient(180deg, #19316f, #1b367c 45%);
+  --home-newsletter-arc: #eae9ec;
+  --home-arc-left: 580px;
+  --home-arc-width: 1470px;
+  --home-arc-height: 1356px;
+  --home-card-shadow: 0 0 28px rgb(0 0 0 / 0.24);
+  --home-quote-shadow: 0 4px 4px rgb(0 0 0 / 0.28);
+  --home-plan-shadow: 0 0 120px rgb(0 0 0 / 0.28);
+}
+
+/* next/font variables are attached to body, so dependent tokens resolve here. */
+body {
+  --reference-font-family: var(--font-poppins-candidate), Arial, sans-serif;
+  --reference-interface-font-family: var(--font-roboto-candidate), Arial, sans-serif;
+  --reference-hero-font-family: var(--font-hero-candidate), Arial, sans-serif;
+}
+
+@theme inline {
+  --color-reference-navy: var(--reference-navy);
+  --color-reference-background: var(--reference-background);
+  --color-reference-text: var(--reference-text);
+  --color-reference-body: var(--reference-body);
+  --color-reference-blue: var(--reference-blue);
+  --color-reference-secondary-navy: var(--reference-secondary-navy);
+  --color-reference-copyright: var(--reference-copyright);
+  --color-reference-circle: var(--reference-circle);
+  --color-reference-border: var(--reference-border);
+  --color-reference-rule: var(--reference-rule);
+  --color-reference-cta-start: var(--reference-cta-start);
+  --color-reference-cta-end: var(--reference-cta-end);
+  --font-reference: var(--reference-font-family);
+  --font-interface: var(--reference-interface-font-family);
+  --font-hero: var(--reference-hero-font-family);
+  --shadow-reference-cta: var(--reference-cta-shadow);
+  --text-shadow-reference-hero: var(--reference-hero-shadow);
+  --radius-reference-pill: var(--reference-pill-radius);
+  --container-reference: var(--reference-content-width);
+  --container-reference-navbar: var(--reference-navbar-width);
+  --container-reference-footer: var(--reference-footer-width);
+  --color-home-light-ink: var(--home-light-ink);
+  --color-home-muted-type: var(--home-muted-type);
+  --color-home-quote-surface: var(--home-quote-surface);
+  --color-home-plan-badge: var(--home-plan-badge);
+  --color-home-featured-caption: var(--home-featured-caption);
+  --color-home-newsletter-arc: var(--home-newsletter-arc);
+  --shadow-home-card: var(--home-card-shadow);
+  --shadow-home-quote: var(--home-quote-shadow);
+  --shadow-home-plan: var(--home-plan-shadow);
+}

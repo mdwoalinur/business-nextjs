@@ -1,0 +1,50 @@
+.map :global(.leaflet-container) {
+  isolation: isolate;
+  background: var(--contact-map-land);
+  font-family: var(--font-poppins-candidate), sans-serif;
+}
+
+.map :global(.leaflet-popup-content-wrapper) {
+  position: relative;
+  padding: 0;
+  border-radius: 20px;
+  background: var(--contact-popup);
+  color: var(--color-reference-text);
+  box-shadow: 0 8px 28px rgb(0 0 0 / 0.2);
+}
+
+.map :global(.leaflet-popup-content-wrapper)::before {
+  position: absolute;
+  top: 6px;
+  left: -22px;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-right: 22px solid var(--contact-popup);
+  border-bottom: 12px solid transparent;
+  content: "";
+}
+
+.map :global(.leaflet-popup-content) {
+  width: 245px !important;
+  margin: 0;
+}
+
+.map :global(.leaflet-popup-tip-container) {
+  display: none;
+}
+
+.map :global(.leaflet-popup-close-button) {
+  top: 4px;
+  right: 5px;
+  color: var(--color-reference-text);
+}
+
+.info {
+  box-sizing: border-box;
+  width: 245px;
+  min-height: 184px;
+  padding: 24px 26px 18px 37px;
+  color: var(--color-reference-text);
+  user-select: text;
+}
